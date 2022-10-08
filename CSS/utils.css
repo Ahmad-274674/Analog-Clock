@@ -1,0 +1,39 @@
+.flex{
+    display: flex;
+}
+
+.flex-c{
+    flex-direction: column;
+}
+
+.flex-j-c{
+    justify-content: center;
+}
+
+.flex-a-c{
+    align-items: center;
+}
+
+.border-2px{
+    border: 2px solid var(--border-color);
+}
+
+.bor-r-5px{
+    border-radius: 5px;
+}
+
+.bg-red{
+    background-color: #f00;
+}
+
+.bg-blue{
+    background-color: #0079fc;
+}
+
+.bg-yellow{
+    background-color: #e5ff00;
+}
+
+.bg-green{
+    background-color: #3cff00;
+}

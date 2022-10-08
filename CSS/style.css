@@ -1,0 +1,111 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set Working Area */
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    overflow: hidden;
+}
+
+/* Set Clock Dimensions */
+.clockArea{
+    width: 600px;
+    min-height: 300px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.9), 
+            inset 0px 0px 30px rgba(0, 0, 0, 0.2)
+}
+
+/* Set Analog Clock */
+.anlogClock{
+    position: relative;
+    margin: 20px 0px;
+    /* width: 200px;
+    height: 200px; */
+}
+
+.tempClock{
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    border:5px solid #e5ff00;
+}
+
+.myName{
+    position: absolute;
+    top: 90px;
+}
+
+.circle{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    background-color: #0079fc;
+    border-radius: 50%;
+}
+
+.aHr, .aMt, .aSc{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.aHr{
+    width: 80px;
+    height: 80px;
+}
+
+.aMt{
+    width: 120px;
+    height: 120px;
+}
+
+.aSc{
+    width: 160px;
+    height: 160px;
+}
+
+.aHr::before{
+    position: absolute;
+    content: '';
+    height: 45px;
+    width: 2px;
+    background: #3cff00;
+    border: 1px solid #3cff00;
+    box-shadow: 0px 0px 5px #3cff00;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.aMt::before{
+    position: absolute;
+    content: '';
+    height: 70px;
+    width: 1.5px;
+    background: #0079fc;
+    border: 1px solid #0079fc;
+    box-shadow: 0px 0px 6px #0079fc;
+    border-radius: 50%;
+    z-index: 6;
+}
+
+.aSc::before{
+    position: absolute;
+    content: '';
+    height: 90px;
+    width: 1px;
+    background: #f00;
+    border: 1px solid #f00;
+    box-shadow: 0px 0px 7px #f00;
+    border-radius: 50%;
+    z-index: 7;
+}
